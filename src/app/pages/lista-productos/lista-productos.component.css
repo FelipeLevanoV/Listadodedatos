@@ -1,0 +1,60 @@
+.titulo {
+  text-align: center;
+  font-size: 24px;
+  color: #8b0000;
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* ⬅️ Más pequeño */
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: #fff5f5;
+  padding: 15px;
+  border-radius: 14px;
+  text-align: center;
+  border: 2px solid #ffd6d6;
+  box-shadow: 0 4px 12px rgba(204, 85, 85, 0.12);
+  transition: 0.3s;
+  max-width: 200px;              /* ⬅️ Limita tamaño */
+  margin: auto;
+}
+
+.producto-img {
+  width: 100%;
+  height: 110px;                 /* ⬅️ Más pequeño */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 16px;
+  color: #8b0000;
+}
+
+.precio {
+  color: #cc3333;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.btn {
+  background: #ff9999;
+  padding: 8px 12px;             /* ⬅️ Reducido */
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background: #ff6666;
+}

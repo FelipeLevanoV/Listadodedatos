@@ -1,0 +1,13 @@
+<h2 class="titulo">Productos de Pastelería</h2>
+
+<div class="grid">
+  <div class="card" *ngFor="let p of productos">
+
+ 
+    <h3 class="name">{{ p.nombre }}</h3>
+
+    <p class="precio">S/. {{ p.precio }}</p>
+
+    <a class="btn" [routerLink]="['/productos', p.id]">Ver detalles</a>
+  </div>
+</div>

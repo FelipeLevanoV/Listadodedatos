@@ -1,0 +1,31 @@
+<div class="detalle-container" *ngIf="producto">
+  <div class="detalle-card">
+    <div class="imagen-container">
+      <img class="detalle-img" [src]="producto.imagen" [alt]="producto.nombre" (error)="onImageError($event)">
+    </div>
+
+    <div class="info">
+      <h2 class="producto-nombre">{{ producto.nombre }}</h2>
+
+      <div class="precio-container">
+        <span class="precio-label">Precio:</span>
+        <span class="precio">S/. {{ producto.precio }}</span>
+      </div>
+
+      <div class="descripcion-container">
+        <h3 class="descripcion-titulo">Descripción</h3>
+        <p class="desc">{{ producto.descripcion }}</p>
+      </div>
+
+      <button class="btn-volver" (click)="volver()">
+        <span class="btn-icon">←</span>
+        Volver a Productos
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="no-producto" *ngIf="!producto">
+  <p>Producto no encontrado</p>
+  <button class="btn-volver" (click)="volver()">← Volver a Productos</button>
+</div>

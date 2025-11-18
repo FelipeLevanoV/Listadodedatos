@@ -1,0 +1,62 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="logo-container">
+      <span class="logo-icon">🍰</span>
+      <div class="logo-text">
+        <h1 class="logo-title">Pastelería Dulce Ruta</h1>
+        <p class="logo-subtitle">Dulces momentos para endulzar tu vida</p>
+      </div>
+    </div>
+
+    <div class="links">
+      <a routerLink="/" routerLinkActive="active">Inicio</a>
+      <a routerLink="/carrito" routerLinkActive="active">Carrito 🛒</a>
+      <a routerLink="/servicios" routerLinkActive="active">Servicios</a>
+    </div>
+  </nav>
+</header>
+
+<main class="content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3 class="footer-title">🍰 Pastelería Dulce Ruta</h3>
+      <p class="footer-description">Creando los mejores momentos dulces desde 2020. Nuestros productos artesanales están hechos con amor y los ingredientes más frescos.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-heading">Enlaces Rápidos</h4>
+      <ul class="footer-links">
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/servicios">Servicios</a></li>
+        <li><a routerLink="/carrito">Carrito</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-heading">Contacto</h4>
+      <ul class="footer-contact">
+        <li>📞 +1 (234) 567-890</li>
+        <li>📧 info&#64;pasteleriadulceruta.com</li>
+        <li>📍 Calle Principal 123, Ciudad</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-heading">Horarios</h4>
+      <ul class="footer-schedule">
+        <li>Lunes - Viernes: 8:00 AM - 8:00 PM</li>
+        <li>Sábado: 9:00 AM - 9:00 PM</li>
+        <li>Domingo: 10:00 AM - 6:00 PM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 Pastelería Dulce Ruta. Todos los derechos reservados.</p>
+    <p class="footer-made">Hecho con ❤️ y mucho azúcar</p>
+  </div>
+</footer>
